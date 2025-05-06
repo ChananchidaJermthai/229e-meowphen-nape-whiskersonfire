@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Analytics;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
 
-    
+    [SerializeField] private TextMeshProUGUI heartcount;
     [SerializeField]private int heart;
 
     private Rigidbody2D rb;
@@ -69,6 +72,13 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
 
         Isdie();
+        UpdateText();
+    }
+    public void UpdateText()
+    {
+
+        heartcount.text = heart.ToString();
+        
     }
 
     void FreezdZ()

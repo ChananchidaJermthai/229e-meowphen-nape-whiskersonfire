@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class BallThrower : MonoBehaviour
 {
     [Header("Ball Settings")]
     public GameObject ballPrefab;
-    public Transform firePoint;         // จุดที่ลูกบอลถูกยิงออก
-    public float shootForce = 10f;      // ความแรงของการโยน
-    public float cooldownTime = 1f;     // ระยะเวลาระหว่างโยนแต่ละลูก
-    public int ballCount = 3;           // จำนวนบอลที่มี
+    public Transform firePoint;         
+    public float shootForce = 10f;      
+    public float cooldownTime = 1f;
+    public TextMeshProUGUI BallCountText; 
+    public int ballCount = 3;           
 
     private bool canShoot = true;
 
@@ -18,6 +20,13 @@ public class BallThrower : MonoBehaviour
         {
             StartCoroutine(ShootBall());
         }
+        UpdateText();
+    }
+    public void UpdateText()
+    {
+
+        BallCountText.text = ballCount.ToString();
+
     }
 
     IEnumerator ShootBall()
