@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Sprite
+  - Ball
+  - Targetitem
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - UI
   - Ground
   - 
-  - 
+  - Player
   - 
   - 
   - 
