@@ -6,11 +6,11 @@ public class BallThrower : MonoBehaviour
 {
     [Header("Ball Settings")]
     public GameObject ballPrefab;
-    public Transform firePoint;         
-    public float shootForce = 10f;      
+    public Transform firePoint;
+    public float travelTime = 1f; // เวลาที่ลูกบอลจะใช้ไปถึงเป้าหมาย
     public float cooldownTime = 1f;
-    public TextMeshProUGUI BallCountText; 
-    public int ballCount = 3;           
+    public TextMeshProUGUI BallCountText;
+    public int ballCount = 3;
 
     private bool canShoot = true;
 
@@ -20,50 +20,49 @@ public class BallThrower : MonoBehaviour
         {
             StartCoroutine(ShootBall());
         }
+
         UpdateText();
     }
+
     public void UpdateText()
     {
-
         BallCountText.text = ballCount.ToString();
-
     }
 
     IEnumerator ShootBall()
     {
         canShoot = false;
 
-        // หาตำแหน่งเมาส์ในโลกจริง
+        // หาตำแหน่งเมาส์ในโลก
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0f;
+        Vector2 targetPosition = new Vector2(mousePos.x, mousePos.y);
 
-        // คำนวณทิศทางจากผู้เล่นไปยังเมาส์
-        Vector2 direction = (mousePos - firePoint.position).normalized;
-
-        // ดึงลูกบอลจาก Pool
+        // ดึงลูกบอลจาก ObjectPool
         GameObject ball = ObjectPool.Instance.GetObject(ballPrefab);
         ball.transform.position = firePoint.position;
         ball.transform.rotation = Quaternion.identity;
 
-        // ปาบอลด้วยแรง
         Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector2.zero; // Reset ก่อนโยน
-        rb.angularVelocity = 0f;
-        rb.AddForce(direction * shootForce, ForceMode2D.Impulse);
+        rb.linearVelocity = CalculateProjectileVelocity(firePoint.position, targetPosition, travelTime);
 
-        // หักจำนวนลูกบอลที่เหลือ
         ballCount--;
 
         yield return new WaitForSeconds(cooldownTime);
         canShoot = true;
     }
 
-    // เรียกเมื่อผู้เล่นเก็บบอลจากแมพ
+
+    Vector2 CalculateProjectileVelocity(Vector2 origin, Vector2 target, float time)
+    {
+        Vector2 distance = target - origin;
+        float velocityX = distance.x / time;
+        float velocityY = distance.y / time + 0.5f * Mathf.Abs(Physics2D.gravity.y) * time;
+        return new Vector2(velocityX, velocityY);
+    }
+
     public void CollectBall(int amount)
     {
         ballCount += amount;
         Debug.Log("🟢 เก็บบอล: ตอนนี้มี " + ballCount + " ลูก");
     }
 }
-
-
