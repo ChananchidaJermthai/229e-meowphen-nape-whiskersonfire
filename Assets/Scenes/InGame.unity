@@ -1493,7 +1493,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ec3f969d3afd9cb45a739e78bf2ba8cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2117,7 +2117,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a91201df004c4954ba02fae91463a520, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2401,7 +2401,7 @@ Transform:
   m_GameObject: {fileID: 96481089}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.167, y: -0.269, z: 0}
+  m_LocalPosition: {x: 47.458, y: -0.269, z: 0}
   m_LocalScale: {x: 0.4069341, y: 0.4069341, z: 0.4069341}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3485,7 +3485,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 12450ae4f20683d40aafe8ab65f08dc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3878,6 +3878,7 @@ GameObject:
   - component: {fileID: 157827668}
   - component: {fileID: 157827667}
   - component: {fileID: 157827666}
+  - component: {fileID: 157827669}
   m_Layer: 6
   m_Name: shelf
   m_TagString: Ground
@@ -3916,7 +3917,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.035411, y: 0.37762403}
@@ -3974,7 +3975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7821b0a8cea42614e82f661b71a3d773, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4001,6 +4002,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096710463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &157827669
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157827665}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &164935352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4218,7 @@ GameObject:
   - component: {fileID: 167172652}
   - component: {fileID: 167172651}
   - component: {fileID: 167172650}
+  - component: {fileID: 167172653}
   m_Layer: 6
   m_Name: 6CC11895-B2D6-469B-B5EB-CD0917289FF2
   m_TagString: Ground
@@ -4236,7 +4257,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.016716957, y: -1.4231535}
@@ -4294,7 +4315,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e4f63b1c2bc728f48b15a79de7ec747b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4321,6 +4342,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096710463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &167172653
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167172649}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &174016994
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,6 +5214,7 @@ GameObject:
   - component: {fileID: 215570041}
   - component: {fileID: 215570040}
   - component: {fileID: 215570039}
+  - component: {fileID: 215570042}
   m_Layer: 6
   m_Name: MagicEraser_250504_231821
   m_TagString: Untagged
@@ -5212,7 +5253,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 3.6988523}
@@ -5297,6 +5338,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096710463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &215570042
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215570038}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &223012090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5965,7 +6025,9 @@ GameObject:
   m_Component:
   - component: {fileID: 241701347}
   - component: {fileID: 241701346}
-  m_Layer: 0
+  - component: {fileID: 241701349}
+  - component: {fileID: 241701348}
+  m_Layer: 6
   m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6036,12 +6098,77 @@ Transform:
   m_GameObject: {fileID: 241701345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.540009, y: -0.74, z: 0}
+  m_LocalPosition: {x: 28.45, y: -1.21, z: 0}
   m_LocalScale: {x: 0.33829552, y: 0.33829552, z: 0.33829552}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1444561744}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &241701348
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241701345}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.13909721, y: 2.5031576}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.180702, y: 0.96904564}
+  m_EdgeRadius: 0
+--- !u!251 &241701349
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241701345}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &248794350
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,7 +7658,7 @@ GameObject:
   - component: {fileID: 355783784}
   - component: {fileID: 355783783}
   - component: {fileID: 355783782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MagicEraser_250504_141404
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10981,8 +11108,6 @@ GameObject:
   m_Component:
   - component: {fileID: 463671056}
   - component: {fileID: 463671057}
-  - component: {fileID: 463671059}
-  - component: {fileID: 463671058}
   m_Layer: 6
   m_Name: MagicEraser_250506_162727
   m_TagString: Ground
@@ -11060,48 +11185,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &463671058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463671055}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 7.980608, y: 3.7087777, z: 0.20000003}
-  m_Center: {x: 0.053976875, y: -0.89061075, z: 0}
---- !u!65 &463671059
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463671055}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 8.70929, y: 1.3338134, z: 0.20000003}
-  m_Center: {x: -0.09445654, y: 1.6732703, z: 0}
 --- !u!1 &472557614
 GameObject:
   m_ObjectHideFlags: 0
@@ -11200,6 +11283,7 @@ GameObject:
   - component: {fileID: 484430418}
   - component: {fileID: 484430417}
   - component: {fileID: 484430416}
+  - component: {fileID: 484430419}
   m_Layer: 6
   m_Name: shelf (1)
   m_TagString: Untagged
@@ -11238,7 +11322,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.009962559, y: 0.099490404}
@@ -11323,6 +11407,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096710463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.815}
+--- !u!251 &484430419
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484430415}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &496985433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,7 +12320,7 @@ MonoBehaviour:
   moveSpeed: 0.5
   jumpForce: 10
   heartcount: {fileID: 1413929802}
-  heart: 0
+  heart: 20
   GameOver: 0
   groundCheck: {fileID: 280711994}
   groundLayer:
@@ -12570,13 +12673,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519200927}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.35279587, w: 0.93570036}
-  m_LocalPosition: {x: 92.34752, y: -10.309723, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.58429134, w: 0.81154406}
+  m_LocalPosition: {x: 92.32, y: -10.77, z: 0}
   m_LocalScale: {x: 0.090207554, y: 0.090207554, z: 0.09020755}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1096710463}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -41.317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -71.506}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -13859,7 +13962,7 @@ GameObject:
   - component: {fileID: 569813254}
   - component: {fileID: 569813253}
   - component: {fileID: 569813255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Washbasin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13930,7 +14033,7 @@ Transform:
   m_GameObject: {fileID: 569813252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.220001, y: -1.01, z: 0}
+  m_LocalPosition: {x: 9.88, y: -1.01, z: 0}
   m_LocalScale: {x: 0.506432, y: 0.506432, z: 0.506432}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20363,7 +20466,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7821b0a8cea42614e82f661b71a3d773, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20384,7 +20487,7 @@ Transform:
   m_GameObject: {fileID: 878536874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.027341, y: 1.2768527, z: 0}
+  m_LocalPosition: {x: 12.32, y: 1.2768527, z: 0}
   m_LocalScale: {x: 0.20694503, y: 0.20694503, z: 0.20694503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20892,7 +20995,7 @@ GameObject:
   - component: {fileID: 914865132}
   - component: {fileID: 914865131}
   - component: {fileID: 914865133}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bathtub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23693,7 +23796,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7821b0a8cea42614e82f661b71a3d773, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23714,7 +23817,7 @@ Transform:
   m_GameObject: {fileID: 1071813576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.987307, y: 1.2768527, z: 0}
+  m_LocalPosition: {x: 17.83, y: 1.2768527, z: 0}
   m_LocalScale: {x: 0.20694503, y: 0.20694503, z: 0.20694503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25307,7 +25410,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4713263221640430048, guid: d61225b5c62acde479107becc0352837, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 254.57
+      value: 256.23
       objectReference: {fileID: 0}
     - target: {fileID: 4713263221640430048, guid: d61225b5c62acde479107becc0352837, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27206,7 +27309,7 @@ GameObject:
   - component: {fileID: 1239342737}
   - component: {fileID: 1239342740}
   - component: {fileID: 1239342739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Toilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27333,7 +27436,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0587368, y: 4.0511484}
@@ -28270,6 +28373,7 @@ GameObject:
   - component: {fileID: 1309354417}
   - component: {fileID: 1309354416}
   - component: {fileID: 1309354415}
+  - component: {fileID: 1309354418}
   m_Layer: 6
   m_Name: IMG_2592
   m_TagString: Ground
@@ -28308,7 +28412,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.850695, y: 0.3986857}
@@ -28393,6 +28497,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096710463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &1309354418
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309354414}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1312053110
 GameObject:
   m_ObjectHideFlags: 0
@@ -28808,6 +28931,7 @@ GameObject:
   - component: {fileID: 1319559199}
   - component: {fileID: 1319559198}
   - component: {fileID: 1319559200}
+  - component: {fileID: 1319559201}
   m_Layer: 6
   m_Name: MagicEraser_250506_162411 (1)
   m_TagString: Ground
@@ -28858,7 +28982,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4746d672f4b3f4b4f965b754cb3466af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28916,7 +29040,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.045051754, y: 3.1988714}
@@ -28931,6 +29055,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.873652, y: 2.4265485}
   m_EdgeRadius: 0
+--- !u!251 &1319559201
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319559196}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1325284778
 GameObject:
   m_ObjectHideFlags: 0
@@ -28942,7 +29085,7 @@ GameObject:
   - component: {fileID: 1325284779}
   - component: {fileID: 1325284780}
   - component: {fileID: 1325284781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30554,7 +30697,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 2.048635}
@@ -42222,7 +42365,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b929f752629a3ad44a52097b0a5199ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
