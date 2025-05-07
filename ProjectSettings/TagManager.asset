@@ -8,6 +8,7 @@ TagManager:
   - Sprite
   - Ball
   - Targetitem
+  - Fish
   layers:
   - Default
   - TransparentFX
