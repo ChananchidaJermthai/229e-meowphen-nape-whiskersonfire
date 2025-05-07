@@ -4250,7 +4250,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: abe800e80d25f6b478e1b927302ef5a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4375,6 +4375,7 @@ GameObject:
   - component: {fileID: 229034489}
   - component: {fileID: 229034490}
   - component: {fileID: 229034491}
+  - component: {fileID: 229034492}
   m_Layer: 6
   m_Name: Work Desk
   m_TagString: Ground
@@ -4483,7 +4484,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.014745474, y: 0.898118}
@@ -4498,6 +4499,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.030798, y: 0.6056371}
   m_EdgeRadius: 0
+--- !u!251 &229034492
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229034488}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 1
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &232235366
 GameObject:
   m_ObjectHideFlags: 0
@@ -19771,8 +19791,8 @@ Transform:
   m_GameObject: {fileID: 997062867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.379, y: 2.125, z: 0}
-  m_LocalScale: {x: 1.0172942, y: 0.7623947, z: 0.6702}
+  m_LocalPosition: {x: 14.386, y: 2.246, z: 0}
+  m_LocalScale: {x: 1.0172942, y: 0.9148737, z: 0.6702}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2002951566}
@@ -32466,7 +32486,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 32aad769c55351f45ba8a1ecc9209a99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39269,7 +39289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ff8b3e52236d4ac47951b29a97d4828c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
