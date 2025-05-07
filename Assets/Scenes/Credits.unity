@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 3.7000122, y: 47.600006}
+  m_AnchoredPosition: {x: 3.6999512, y: 47.600006}
   m_SizeDelta: {x: -96, y: -62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25878516
@@ -577,6 +577,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: CHANANCHIDA JERMTHAI 229E NO.35
       objectReference: {fileID: 0}
+    - target: {fileID: 3638237535314771436, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     - target: {fileID: 6929992145318995398, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
       propertyPath: m_Name
       value: CHANANCHIDA
@@ -850,7 +854,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 157
     m_FontStyle: 0
     m_BestFit: 1
@@ -862,7 +866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: back
+  m_Text: BACK
 --- !u!222 &584980802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1035,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: ITTHICHAI FAENGCHAIYAPHUM 229E No.31
       objectReference: {fileID: 0}
+    - target: {fileID: 3638237535314771436, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     - target: {fileID: 6929992145318995398, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
       propertyPath: m_Name
       value: ITTHICHAI
@@ -1084,15 +1092,15 @@ RectTransform:
   m_GameObject: {fileID: 783436200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24081376, y: 0.24081376, z: 0.24081376}
+  m_LocalScale: {x: 7.539159, y: 7.539159, z: 7.539159}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1603219520}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.2, y: 51.1}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -94.86, y: 52.9}
+  m_SizeDelta: {x: 6, y: 2.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &783436202
 MonoBehaviour:
@@ -1114,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5135f88b317f5e442b472a301366ad5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6810e404c8b6b8c49afee57373f131d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1378,7 +1386,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -1602,7 +1610,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -1787,6 +1795,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: TARIPOOM HOMJOMPA 229E NO.29
       objectReference: {fileID: 0}
+    - target: {fileID: 3638237535314771436, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     - target: {fileID: 6929992145318995398, guid: be368f3d77f19a3458f23d39a2e9c1f9, type: 3}
       propertyPath: m_Name
       value: TARIPOOM
@@ -1887,7 +1899,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -2397,7 +2409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 157
     m_FontStyle: 0
     m_BestFit: 1
