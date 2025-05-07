@@ -17,13 +17,13 @@ public class Ball : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
 
-        // เริ่มนับเวลาคืนเข้า Pool อัตโนมัติ
+        
         autoReturnRoutine = StartCoroutine(AutoReturnToPool());
     }
 
     private void OnDisable()
     {
-        // หยุดเวลาเมื่อหาย
+        
         if (autoReturnRoutine != null)
             StopCoroutine(autoReturnRoutine);
     }
@@ -32,22 +32,22 @@ public class Ball : MonoBehaviour
     {
         yield return new WaitForSeconds(lifetime);
         ObjectPool.Instance.ReturnObject(gameObject);
-        Debug.Log("⏱ หมดเวลา → บอลกลับ Pool");
+        Debug.Log(" หมดเวลา → บอลกลับ Pool");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Targetitem"))
         {
-            // เรียก TargetItem ให้จัดการตัวเอง
+            
             TargetItem target = collision.collider.GetComponent<TargetItem>();
             if (target != null)
             {
-                target.OnHit(); // จะเล่น effect + ดรอป item + หาย
+                target.OnHit(); 
             }
 
             ObjectPool.Instance.ReturnObject(gameObject);
-            Debug.Log("🎯 ชนกับ Targetitem → บอลหาย");
+            Debug.Log(" ชนกับ Targetitem → บอลหาย");
         }
     }
 
@@ -60,7 +60,7 @@ public class Ball : MonoBehaviour
             {
                 thrower.CollectBall(1);
                 ObjectPool.Instance.ReturnObject(gameObject);
-                Debug.Log("🙋 ผู้เล่นเก็บบอลคืน");
+                Debug.Log(" ผู้เล่นเก็บบอลคืน");
             }
         }
     }

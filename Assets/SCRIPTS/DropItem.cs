@@ -10,7 +10,7 @@ public class DropItem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // หา BallThrower ของ Player แล้วเพิ่มบอล
+            
             BallThrower thrower = other.GetComponent<BallThrower>();
             if (thrower != null)
             {
@@ -18,7 +18,7 @@ public class DropItem : MonoBehaviour
                 thrower.CollectBall(amount);
                 Debug.Log("🎁 ผู้เล่นเก็บ Drop → + " + amount + " ลูกบอล");
 
-                // คืนกลับเข้า Pool
+                
                 ObjectPool.Instance.ReturnObject(gameObject);
             }
         }

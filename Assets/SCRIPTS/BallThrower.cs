@@ -7,7 +7,7 @@ public class BallThrower : MonoBehaviour
     [Header("Ball Settings")]
     public GameObject ballPrefab;
     public Transform firePoint;
-    public float travelTime = 1f; // เวลาที่ลูกบอลจะใช้ไปถึงเป้าหมาย
+    public float travelTime = 1f; 
     public float cooldownTime = 1f;
     public TextMeshProUGUI BallCountText;
     public int ballCount = 3;
@@ -33,11 +33,11 @@ public class BallThrower : MonoBehaviour
     {
         canShoot = false;
 
-        // หาตำแหน่งเมาส์ในโลก
+       
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 targetPosition = new Vector2(mousePos.x, mousePos.y);
 
-        // ดึงลูกบอลจาก ObjectPool
+        
         GameObject ball = ObjectPool.Instance.GetObject(ballPrefab);
         ball.transform.position = firePoint.position;
         ball.transform.rotation = Quaternion.identity;
@@ -63,6 +63,6 @@ public class BallThrower : MonoBehaviour
     public void CollectBall(int amount)
     {
         ballCount += amount;
-        Debug.Log("🟢 เก็บบอล: ตอนนี้มี " + ballCount + " ลูก");
+        
     }
 }

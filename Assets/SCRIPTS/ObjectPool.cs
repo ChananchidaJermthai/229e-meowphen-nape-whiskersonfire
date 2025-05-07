@@ -25,7 +25,7 @@ public class ObjectPool : MonoBehaviour
 
     void Start()
     {
-        // สร้าง Queue สำหรับแต่ละ prefab
+        
         foreach (PoolItem item in poolItems)
         {
             Queue<GameObject> newQueue = new Queue<GameObject>();
@@ -41,7 +41,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    // เรียก prefab ตามประเภท
+    
     public GameObject GetObject(GameObject prefab)
     {
         if (!poolDictionary.ContainsKey(prefab))
@@ -60,12 +60,12 @@ public class ObjectPool : MonoBehaviour
         }
         else
         {
-            GameObject obj = Instantiate(prefab); // กรณีเกินจำนวน
+            GameObject obj = Instantiate(prefab); 
             return obj;
         }
     }
 
-    // คืนวัตถุเข้าคลัง
+   
     public void ReturnObject(GameObject obj)
     {
         obj.SetActive(false);
@@ -79,7 +79,7 @@ public class ObjectPool : MonoBehaviour
             }
         }
 
-        // ถ้าไม่เจอ pool ที่ตรง → ทำลายทิ้ง
+        
         Debug.LogWarning("⚠️ Object ไม่มี Pool ตรงกัน → ทำลาย: " + obj.name);
         Destroy(obj);
     }
