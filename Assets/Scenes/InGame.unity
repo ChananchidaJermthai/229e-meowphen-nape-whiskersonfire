@@ -3270,7 +3270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ec3f969d3afd9cb45a739e78bf2ba8cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6077,7 +6077,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0ec3b17656ca13f4e9890af94999d9c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9941,7 +9941,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ec3f969d3afd9cb45a739e78bf2ba8cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12353,7 +12353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 3171043849667223889, guid: 596b20b23c6b53645ac0ab6aef2a524c, type: 3}
   firePoint: {fileID: 411781806}
-  shootForce: 18
+  travelTime: 1
   cooldownTime: 1
   BallCountText: {fileID: 706328258}
   ballCount: 3
@@ -14665,11 +14665,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6445666186361868708, guid: 9deea548c44c9ac4e94d6932a0d85eaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.372174
+      value: 1.0331316
       objectReference: {fileID: 0}
     - target: {fileID: 6445666186361868708, guid: 9deea548c44c9ac4e94d6932a0d85eaf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.765278
+      value: 22.010977
       objectReference: {fileID: 0}
     - target: {fileID: 6445666186361868708, guid: 9deea548c44c9ac4e94d6932a0d85eaf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16430,7 +16430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &674427288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20869,7 +20869,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7821b0a8cea42614e82f661b71a3d773, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -25769,7 +25769,7 @@ Transform:
   m_GameObject: {fileID: 1179043811}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.599, y: -1.669, z: 0}
+  m_LocalPosition: {x: 58.599, y: -1.685, z: 0}
   m_LocalScale: {x: 0.5114767, y: 0.5114767, z: 0.5114767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26478,7 +26478,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fbef9e129a43a3e48be4cf52b6877c9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -35083,11 +35083,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4713263221640430048, guid: d61225b5c62acde479107becc0352837, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.14
+      value: 43.04
       objectReference: {fileID: 0}
     - target: {fileID: 4713263221640430048, guid: d61225b5c62acde479107becc0352837, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.64
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 4713263221640430048, guid: d61225b5c62acde479107becc0352837, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36452,11 +36452,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1967835574231978635, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.736471
+      value: 5.3974285
       objectReference: {fileID: 0}
     - target: {fileID: 1967835574231978635, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.026861
+      value: 22.272558
       objectReference: {fileID: 0}
     - target: {fileID: 1967835574231978635, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
       propertyPath: m_LocalPosition.z
@@ -44245,11 +44245,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1604227354005263172, guid: d6d04e4b024a73147a9b9f10d607f384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.75
+      value: 3.4109573
       objectReference: {fileID: 0}
     - target: {fileID: 1604227354005263172, guid: d6d04e4b024a73147a9b9f10d607f384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.44
+      value: 20.685698
       objectReference: {fileID: 0}
     - target: {fileID: 1604227354005263172, guid: d6d04e4b024a73147a9b9f10d607f384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -44666,11 +44666,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2631596265672742252, guid: 13c22245ae37dd14c8a96950a7591d95, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.7990427
+      value: -4.54
       objectReference: {fileID: 0}
     - target: {fileID: 2631596265672742252, guid: 13c22245ae37dd14c8a96950a7591d95, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.354302
+      value: 21.6
       objectReference: {fileID: 0}
     - target: {fileID: 2631596265672742252, guid: 13c22245ae37dd14c8a96950a7591d95, type: 3}
       propertyPath: m_LocalPosition.z
