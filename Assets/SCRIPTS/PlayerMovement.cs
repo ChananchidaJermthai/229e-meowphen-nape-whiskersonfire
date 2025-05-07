@@ -95,6 +95,10 @@ public class PlayerMovement : MonoBehaviour
         if (heart <= 0)
         {
             GameOver = true;
+            if (GameOver)
+            {
+                SceneManager.LoadScene("LoseScene");
+            }
         }
     }
 
@@ -109,6 +113,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log(" - Hp !");
             TakeDamage();
+        }
+        else if (other.CompareTag("Fish"))
+        {
+            heart += 1;
         }
     }
 
